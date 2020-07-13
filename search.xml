@@ -72,7 +72,7 @@
 <p>小小注意点：</p>
 <ul>
 <li>二维数组的第一个参数是行，第二个参数是列；</li>
-<li>因为使用的是 VS 编写代码，所以代码中使用的是 <code>scanf_s</code>函数；（参考：<a href="https://orange-xin.github.io/scanf-scanf-s/）">https://orange-xin.github.io/scanf-scanf-s/）</a></li>
+<li>因为使用的是 VS 编写代码，所以代码中使用的是 <code>scanf_s</code>函数；（参考：<a href="https://orange-xin.github.io/scanf-scanf-s/">scanf()和scanf_s()的区别</a>）</li>
 <li>在代码执行时循环体中 k = 2 的第一行代码会报以下的错，目前还没有找到解决方法：<img src= "/img/loading.gif" data-src="/C-SnakelikeMatrixOne/image-20200706214700749.png" alt="image-20200706214700749"></li>
 </ul>
 <p>感谢阅读！</p>
