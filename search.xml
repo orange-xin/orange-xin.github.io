@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/2020/07/03/hello-world/</url>
+    <url>/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
@@ -20,7 +20,7 @@
   </entry>
   <entry>
     <title>电脑登录锁屏密码显示解决方案</title>
-    <url>/2020/07/04/registry-%E7%94%B5%E8%84%91%E7%99%BB%E5%BD%95%E9%94%81%E5%B1%8F%E5%AF%86%E7%A0%81%E6%98%BE%E7%A4%BA/</url>
+    <url>/registry-%E7%94%B5%E8%84%91%E7%99%BB%E5%BD%95%E9%94%81%E5%B1%8F%E5%AF%86%E7%A0%81%E6%98%BE%E7%A4%BA/</url>
     <content><![CDATA[<p>当其他的电脑设置都试过了但电脑锁屏时依旧不要求输入密码，那么这时我们可以新建一个空白文档，比如用记事本新建一个空白文档，复制粘贴下面的内容，再将文件以 .reg 的后缀名保存，文件名任意，最后再双击创建的文件，点击确定。</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">[HKEY<span class="emphasis">_LOCAL_</span>MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]</span><br><span class="line"></span><br><span class="line">"AwayModeEnabled"=dword:00000000</span><br></pre></td></tr></table></figure>
 
@@ -31,14 +31,14 @@
   </entry>
   <entry>
     <title>蛇形矩阵（一）-对角线型</title>
-    <url>/2020/07/04/C-%E8%9B%87%E5%BD%A2%E7%9F%A9%E9%98%B5%EF%BC%88%E4%B8%80%EF%BC%89-%E5%AF%B9%E8%A7%92%E7%BA%BF%E5%9E%8B/</url>
+    <url>/C-SnakelikeMatrixOne/</url>
     <content><![CDATA[<p><strong>题目要求</strong></p>
 <p>​        将自然数1、2、3、···、N*N逐个顺序插入方阵中适当的位置，这个过程中沿斜线进行，构成蛇形排列阵。如N=4时的蛇形排列阵为：</p>
-<p><img src= "/img/loading.gif" data-src="/2020/07/04/C-%E8%9B%87%E5%BD%A2%E7%9F%A9%E9%98%B5%EF%BC%88%E4%B8%80%EF%BC%89-%E5%AF%B9%E8%A7%92%E7%BA%BF%E5%9E%8B/image-20200706204152026.png" alt="image-20200706204152026"></p>
+<p><img src= "/img/loading.gif" data-src="/C-SnakelikeMatrixOne/image-20200706204152026.png" alt="image-20200706204152026"></p>
 <p>请编写C语言程序按以上规则输出N=5时的蛇形排列阵。</p>
 <p><strong>算法思路：</strong></p>
 <p>​        观察上述矩阵的数值增长线路，如下图所示：</p>
-<p><img src= "/img/loading.gif" data-src="/2020/07/04/C-%E8%9B%87%E5%BD%A2%E7%9F%A9%E9%98%B5%EF%BC%88%E4%B8%80%EF%BC%89-%E5%AF%B9%E8%A7%92%E7%BA%BF%E5%9E%8B/image-20200706212217241.png" alt="image-20200706212217241"></p>
+<p><img src= "/img/loading.gif" data-src="/C-SnakelikeMatrixOne/image-20200706212217241.png" alt="image-20200706212217241"></p>
 <ul>
 <li>初始状态：行 i = 0，j = 0 时，数值为1；</li>
 <li>当移动到下一个位置时，需要把当前设定的k值变成下一步要移动的方向状态；</li>
@@ -72,8 +72,8 @@
 <p>小小注意点：</p>
 <ul>
 <li>二维数组的第一个参数是行，第二个参数是列；</li>
-<li>因为使用的是 VS 编写代码，所以代码中使用的是 <code>scanf_s</code>函数；</li>
-<li>在代码执行时循环体中 k = 2 的第一行代码会报以下的错，目前还没有找到解决方法：<img src= "/img/loading.gif" data-src="/2020/07/04/C-%E8%9B%87%E5%BD%A2%E7%9F%A9%E9%98%B5%EF%BC%88%E4%B8%80%EF%BC%89-%E5%AF%B9%E8%A7%92%E7%BA%BF%E5%9E%8B/image-20200706214700749.png" alt="image-20200706214700749"></li>
+<li>因为使用的是 VS 编写代码，所以代码中使用的是 <code>scanf_s</code>函数；（参考：<a href="https://orange-xin.github.io/scanf-scanf-s/）">https://orange-xin.github.io/scanf-scanf-s/）</a></li>
+<li>在代码执行时循环体中 k = 2 的第一行代码会报以下的错，目前还没有找到解决方法：<img src= "/img/loading.gif" data-src="/C-SnakelikeMatrixOne/image-20200706214700749.png" alt="image-20200706214700749"></li>
 </ul>
 <p>感谢阅读！</p>
 ]]></content>
@@ -83,6 +83,33 @@
       <tags>
         <tag>C</tag>
         <tag>Algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>scanf和scanf_sd的区别</title>
+    <url>/scanf-scanf-s/</url>
+    <content><![CDATA[<blockquote>
+<p>在蛇形矩阵的编码过程中，我使用的是VS进行编码，在给n赋输入值的时候使用的是<code>scanf()</code>，但是VS在编译时会报错，并提示使用<code>scnaf_s()</code>，在换了函数过后的确结果报错问题。</p>
+</blockquote>
+<p>首先我们来看下这两个函数的联系和大致区别：</p>
+<ul>
+<li><p><code>scanf()</code>函数是标准C中提供的标准输入函数，用以读取用户输入的数据</p>
+</li>
+<li><p><code>scanf_s()</code>函数是Microsoft公司VS开发工具提供的一个<strong>功能相同</strong>的安全标准输入函数，从vc++2005开始，VS系统提供了<code>scanf_s()</code>。在调用该函数时，必须提供一个数字以表明最多读取多少位字符。</p>
+</li>
+</ul>
+<p>由此我们可以看出，这两个函数的功能并没有什么区别，但是VS中为什么不使用<code>scanf()</code>呢？我们需要进一步了解它们的区别和使用场景：</p>
+<p><code>scanf()</code>在读取数据时不检查边界，所以可能会造成内存访问越界；而如果用<code>scanf_s()</code>则可避免此问题：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例如：分配了5字节的空间但是用户输入了10字节，就会导致scanf()读到10个字节</span></span><br><span class="line"><span class="keyword">char</span> buf[<span class="number">5</span>]=&#123;<span class="string">'\0'</span>&#125;;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%s"</span>, buf);</span><br><span class="line"><span class="comment">//如果输入1234567890，则5以后的部分会被写到别的变量所在的空间上去，从而可能会导致程序运行异常。</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">char</span> buf[<span class="number">5</span>]=&#123;<span class="string">'\0'</span>&#125;;</span><br><span class="line">scanf_s(<span class="string">"%s"</span>,buf,<span class="number">5</span>); <span class="comment">//最多读取4个字符，因为buf[4]要放'\0' </span></span><br><span class="line"><span class="comment">//如果输入1234567890，则buf只会接受前4个字符</span></span><br><span class="line"><span class="comment">//注：scanf_s最后一个参数n是接收缓冲区的大小（即buf的容量），表示最多读取n-1个字符</span></span><br></pre></td></tr></table></figure>
+
+<p>在蛇形矩阵的编码中，需要读取输入的int型，并且没有在<code>scanf_s()</code>里添加参数但仍然可用。并且很多带“_s”后缀的函数是为了让原版函数更安全，传入一个和参数有关的大小值，避免引用到不存在的元素，防止hacker利用原版的不安全性（漏洞）黑掉系统。</p>
+<p>因此，使用<code>scanf()</code>还是<code>scanf_s()</code>具体需要看使用的编译器以及是否需要达到更安全的输入要求。</p>
+]]></content>
+      <categories>
+        <category>编译器</category>
+      </categories>
+      <tags>
+        <tag>VS</tag>
       </tags>
   </entry>
 </search>

@@ -1488,7 +1488,7 @@ pre .meta {
   color: #c792ea;
 }
 pre .comment {
-  color: #546e7a;
+  color: #676e95;
 }
 pre .variable,
 pre .attribute,
@@ -1555,8 +1555,8 @@ pre .javascript .function {
   overflow: auto;
   margin: 0 0 1rem;
   padding: 0;
-  background: #263238;
-  color: #eff;
+  background: #292d3e;
+  color: #a6accd;
   line-height: 20px;
 }
 blockquote {
@@ -1598,7 +1598,7 @@ blockquote footer cite:before {
 #article-container pre code {
   padding: 0;
   background: none;
-  color: #eff;
+  color: #a6accd;
   text-shadow: none;
 }
 #article-container figure.highlight {
@@ -1610,7 +1610,7 @@ blockquote footer cite:before {
   border: none;
 }
 #article-container figure.highlight .line.marked {
-  background-color: rgba(128,203,196,0.125);
+  background-color: rgba(113,124,180,0.314);
 }
 #article-container figure.highlight table {
   display: block;
@@ -1638,16 +1638,16 @@ blockquote footer cite:before {
 #article-container figure.highlight figcaption a {
   float: right;
   padding-right: 10px;
-  color: #eff;
+  color: #a6accd;
 }
 #article-container figure.highlight figcaption a:hover {
-  border-bottom-color: #eff;
+  border-bottom-color: #a6accd;
 }
 #article-container figure.highlight .gutter pre {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  background-color: #263238;
-  color: rgba(238,255,255,0.5);
+  background-color: #292d3e;
+  color: rgba(166,172,205,0.5);
   text-align: right;
 }
 #article-container figure.highlight .code pre {
@@ -1663,8 +1663,8 @@ blockquote footer cite:before {
   overflow: hidden;
   width: 100%;
   height: 1.5rem;
-  background: #222d32;
-  color: rgba(238,255,255,0.8);
+  background: #252938;
+  color: #a6accd;
   font-size: 14px;
 }
 #article-container figure.highlight .highlight-tools .code-expand {
