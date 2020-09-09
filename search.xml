@@ -3,7 +3,7 @@
   <entry>
     <title>电脑登录锁屏密码显示解决方案</title>
     <url>/registry-%E7%94%B5%E8%84%91%E7%99%BB%E5%BD%95%E9%94%81%E5%B1%8F%E5%AF%86%E7%A0%81%E6%98%BE%E7%A4%BA/</url>
-    <content><![CDATA[<p>当其他的电脑设置都试过了但电脑锁屏时依旧不要求输入密码，那么这时我们可以新建一个空白文档，比如用记事本新建一个空白文档，复制粘贴下面的内容，再将文件以 .reg 的后缀名保存，文件名任意，最后再双击创建的文件，点击确定。</p>
+    <content><![CDATA[<p>&emsp;&emsp;当其他的电脑设置都试过了但电脑锁屏时依旧不要求输入密码，那么这时我们可以新建一个空白文档，比如用记事本新建一个空白文档，复制粘贴下面的内容，再将文件以 .reg 的后缀名保存，文件名任意，最后再双击创建的文件，点击确定。</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">[HKEY<span class="emphasis">_LOCAL_</span>MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]</span><br><span class="line"></span><br><span class="line">"AwayModeEnabled"=dword:00000000</span><br></pre></td></tr></table></figure>
 
 ]]></content>
@@ -27,12 +27,12 @@
 <li><p><code>scanf_s()</code>函数是Microsoft公司VS开发工具提供的一个<strong>功能相同</strong>的安全标准输入函数，从vc++2005开始，VS系统提供了<code>scanf_s()</code>。在调用该函数时，必须提供一个数字以表明最多读取多少位字符。</p>
 </li>
 </ul>
-<p>由此我们可以看出，这两个函数的功能并没有什么区别，但是VS中为什么不使用<code>scanf()</code>呢？我们需要进一步了解它们的区别和使用场景：</p>
-<p><code>scanf()</code>在读取数据时不检查边界，所以可能会造成内存访问越界；而如果用<code>scanf_s()</code>则可避免此问题：</p>
+<p>&emsp;&emsp;由此我们可以看出，这两个函数的功能并没有什么区别，但是VS中为什么不使用<code>scanf()</code>呢？我们需要进一步了解它们的区别和使用场景：</p>
+<p>&emsp;&emsp;<code>scanf()</code>在读取数据时不检查边界，所以可能会造成内存访问越界；而如果用<code>scanf_s()</code>则可避免此问题：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//例如：分配了5字节的空间但是用户输入了10字节，就会导致scanf()读到10个字节</span></span><br><span class="line"><span class="keyword">char</span> buf[<span class="number">5</span>]=&#123;<span class="string">'\0'</span>&#125;;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%s"</span>, buf);</span><br><span class="line"><span class="comment">//如果输入1234567890，则5以后的部分会被写到别的变量所在的空间上去，从而可能会导致程序运行异常。</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">char</span> buf[<span class="number">5</span>]=&#123;<span class="string">'\0'</span>&#125;;</span><br><span class="line">scanf_s(<span class="string">"%s"</span>,buf,<span class="number">5</span>); <span class="comment">//最多读取4个字符，因为buf[4]要放'\0' </span></span><br><span class="line"><span class="comment">//如果输入1234567890，则buf只会接受前4个字符</span></span><br><span class="line"><span class="comment">//注：scanf_s最后一个参数n是接收缓冲区的大小（即buf的容量），表示最多读取n-1个字符</span></span><br></pre></td></tr></table></figure>
 
-<p>在蛇形矩阵的编码中，需要读取输入的int型，并且没有在<code>scanf_s()</code>里添加参数但仍然可用。并且很多带“_s”后缀的函数是为了让原版函数更安全，传入一个和参数有关的大小值，避免引用到不存在的元素，防止hacker利用原版的不安全性（漏洞）黑掉系统。</p>
-<p>因此，使用<code>scanf()</code>还是<code>scanf_s()</code>具体需要看使用的编译器以及是否需要达到更安全的输入要求。</p>
+<p>&emsp;&emsp;在蛇形矩阵的编码中，需要读取输入的int型，并且没有在<code>scanf_s()</code>里添加参数但仍然可用。并且很多带“_s”后缀的函数是为了让原版函数更安全，传入一个和参数有关的大小值，避免引用到不存在的元素，防止hacker利用原版的不安全性（漏洞）黑掉系统。</p>
+<p>&emsp;&emsp;因此，使用<code>scanf()</code>还是<code>scanf_s()</code>具体需要看使用的编译器以及是否需要达到更安全的输入要求。</p>
 ]]></content>
       <categories>
         <category>编译器</category>
@@ -44,15 +44,16 @@
   <entry>
     <title>筛选数组方法-JS中的妙用</title>
     <url>/ScreeningArrayElement/</url>
-    <content><![CDATA[<p><strong>题目要求：</strong>请筛选出数组 <code>arr = [1, 5, 85, 42, 30, 2, 11]</code>中大于20的元素，并将这些元素保存到新的数组<code>newArr</code>中。</p>
-<p>无论何种语言，我们在筛选数组元素的时候，都可以用到下面的算法思路。这里以 JS 来举例：</p>
+    <content><![CDATA[<p><strong>题目要求</strong></p>
+<p>&emsp;&emsp;请筛选出数组 <code>arr = [1, 5, 85, 42, 30, 2, 11]</code>中大于20的元素，并将这些元素保存到新的数组<code>newArr</code>中。</p>
+<p><strong>算法思路&amp;代码实现</strong>    </p>
+<p>&emsp;&emsp;无论何种语言，我们在筛选数组元素的时候，都可以用到下面的算法思路。这里以 JS 来举例：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">5</span>, <span class="number">85</span>, <span class="number">42</span>, <span class="number">30</span>, <span class="number">2</span>, <span class="number">11</span>];</span><br><span class="line"><span class="keyword">var</span> newArr = [];</span><br><span class="line"><span class="keyword">var</span> j = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr[i] &gt; <span class="number">20</span>)&#123;</span><br><span class="line">        newArr[j] = arr[i];</span><br><span class="line">        j++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(newArr); <span class="comment">// [85, 42, 30]</span></span><br></pre></td></tr></table></figure>
 
-<p>但是在 JavaScript 中，我们可以采用另一种思路方法：</p>
+<p>&emsp;&emsp;但是在 JavaScript 中，我们可以采用另一种思路方法：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">5</span>, <span class="number">85</span>, <span class="number">42</span>, <span class="number">30</span>, <span class="number">2</span>, <span class="number">11</span>];</span><br><span class="line"><span class="keyword">var</span> newArr = []; <span class="comment">// 这里 newArr 是一个空数组，length 属性为0</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr[i] &gt; <span class="number">20</span>)&#123;</span><br><span class="line">        newArr[newArr.length] = arr[i];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(newArr);</span><br></pre></td></tr></table></figure>
 
-<p>充分利用 length 属性的值来进行编码，可以减少代码量，但最重要的是提供了另一种思路。</p>
-<p>感谢阅读！</p>
+<p>&emsp;&emsp;充分利用 length 属性的值来进行编码，可以减少代码量，但最重要的是提供了另一种思路，这也是需要经验的积累的，加油！</p>
 ]]></content>
       <categories>
         <category>JavaScript</category>
@@ -63,64 +64,8 @@
       </tags>
   </entry>
   <entry>
-    <title>蛇形矩阵（一）-对角线型</title>
-    <url>/SnakelikeMatrixOne/</url>
-    <content><![CDATA[<p><strong>题目要求</strong></p>
-<p>​        将自然数1、2、3、···、N*N逐个顺序插入方阵中适当的位置，这个过程中沿斜线进行，构成蛇形排列阵。如N=4时的蛇形排列阵为：</p>
-<p><img src= "/img/loading.gif" data-src="/SnakelikeMatrixOne/image-20200706204152026.png" alt="image-20200706204152026"></p>
-<p>请编写C语言程序按以上规则输出N=5时的蛇形排列阵。</p>
-<p><strong>算法思路：</strong></p>
-<p>​        观察上述矩阵的数值增长线路，如下图所示：</p>
-<p><img src= "/img/loading.gif" data-src="/SnakelikeMatrixOne/image-20200706212217241.png" alt="image-20200706212217241"></p>
-<ul>
-<li>初始状态：行 i = 0，j = 0 时，数值为1；</li>
-<li>当移动到下一个位置时，需要把当前设定的k值变成下一步要移动的方向状态；</li>
-<li>k = 1时，下一步的移动方向可能是 <ul>
-<li>位于矩阵的第一行：k = 2；</li>
-<li>位于矩阵的最后一行：k = 4；</li>
-</ul>
-</li>
-<li>k = 2时，下一步的移动方向可能是 <ul>
-<li>位于矩阵的最后一行：k = 1；</li>
-<li>位于矩阵其他位置：k = 2；</li>
-<li>位于矩阵的第一列：k = 3；</li>
-</ul>
-</li>
-<li>k = 3时，下一步的移动方向可能是 <ul>
-<li>位于矩阵的最后一列：k = 2；</li>
-<li>位于矩阵的第一列：k = 4；</li>
-</ul>
-</li>
-<li>k = 4时，下一步的移动方向可能是 <ul>
-<li>位于矩阵的第一行：k = 1；</li>
-<li>位于矩阵的最后一列：k = 3；</li>
-<li>位于矩阵其它位置：k = 4；</li>
-</ul>
-</li>
-</ul>
-<p><strong>代码实现：</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">0</span>;  <span class="comment">//row</span></span><br><span class="line">	<span class="keyword">int</span> j = <span class="number">0</span>;  <span class="comment">//column</span></span><br><span class="line">	<span class="keyword">int</span> k = <span class="number">3</span>;  <span class="comment">//down</span></span><br><span class="line">	<span class="comment">//k=1: to right; </span></span><br><span class="line">    <span class="comment">//k=2: to bottom left corner; </span></span><br><span class="line">	<span class="comment">//k=3: down; </span></span><br><span class="line">    <span class="comment">//k=4: to top right corner</span></span><br><span class="line">	<span class="keyword">int</span> arr[<span class="number">10</span>][<span class="number">10</span>];	<span class="comment">//max size</span></span><br><span class="line">	arr[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//input</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Input n: "</span>);</span><br><span class="line">	scanf_s(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (i != n - <span class="number">1</span> || j != n - <span class="number">1</span>) &#123;</span><br><span class="line">		<span class="keyword">if</span> (k == <span class="number">1</span>) &#123;</span><br><span class="line">			arr[i][j + <span class="number">1</span>] = arr[i][j] + <span class="number">1</span>;</span><br><span class="line">			j = j + <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">if</span> (i == n - <span class="number">1</span>) &#123;</span><br><span class="line">				k = <span class="number">4</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				k = <span class="number">2</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (k == <span class="number">2</span>) &#123;</span><br><span class="line">			arr[i + <span class="number">1</span>][j - <span class="number">1</span>] = arr[i][j] + <span class="number">1</span>;</span><br><span class="line">			j = j - <span class="number">1</span>;</span><br><span class="line">			i = i + <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">if</span> (j == <span class="number">0</span> &amp;&amp; i != n - <span class="number">1</span>) &#123;</span><br><span class="line">				k = <span class="number">3</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (i == n - <span class="number">1</span>) &#123;</span><br><span class="line">				k = <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				k = <span class="number">2</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (k == <span class="number">3</span>) &#123;</span><br><span class="line">			arr[i + <span class="number">1</span>][j] = arr[i][j] + <span class="number">1</span>;</span><br><span class="line">			i = i + <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">if</span> (j == n - <span class="number">1</span>) &#123;</span><br><span class="line">				k = <span class="number">2</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				k = <span class="number">4</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (k == <span class="number">4</span>) &#123;</span><br><span class="line">			arr[i - <span class="number">1</span>][j + <span class="number">1</span>] = arr[i][j] + <span class="number">1</span>;</span><br><span class="line">			j = j + <span class="number">1</span>;</span><br><span class="line">			i = i - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">			<span class="keyword">if</span> (i == <span class="number">0</span> &amp;&amp; j != n - <span class="number">1</span>) &#123;</span><br><span class="line">				k = <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (j == n - <span class="number">1</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				k = <span class="number">3</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				k = <span class="number">4</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//print</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> a = <span class="number">0</span>; a &lt; n; a++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> b = <span class="number">0</span>; b &lt; n; b++) &#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d\t"</span>, arr[a][b]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>实现对角线型蛇形矩阵的算法不止这一种，可以多多了解。</p>
-<p>小小注意点：</p>
-<ul>
-<li>二维数组的第一个参数是行，第二个参数是列；</li>
-<li>因为使用的是 VS 编写代码，所以代码中使用的是 <code>scanf_s</code>函数；（参考：<a href="https://orange-xin.github.io/scanf-scanf-s/">scanf()和scanf_s()的区别</a>）</li>
-<li>在代码执行时循环体中 k = 2 的第一行代码会报以下的错，目前还没有找到解决方法：<img src= "/img/loading.gif" data-src="/SnakelikeMatrixOne/image-20200706214700749.png" alt="image-20200706214700749"></li>
-</ul>
-<p>感谢阅读！</p>
-]]></content>
-      <categories>
-        <category>C语言</category>
-      </categories>
-      <tags>
-        <tag>C</tag>
-        <tag>Algorithm</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo-basic instructions</title>
-    <url>/hexo-basic%20instructions/</url>
+    <url>/hexo-basic-instructions/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>. (rewrite according to original doc given by theme developer)</p>
 <h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><h2 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h2><p>git bash in your “blog” root directory</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
@@ -149,6 +94,127 @@
       <tags>
         <tag>install</tag>
         <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Similar Words of Coding in English</title>
+    <url>/English-SimilarWordsOfCoding/</url>
+    <content><![CDATA[<p>【All the annotation of words is from Collins dictionary.】</p>
+<h2 id="frame-amp-framework"><a href="#frame-amp-framework" class="headerlink" title="frame &amp; framework"></a>frame &amp; framework</h2><h3 id="frame"><a href="#frame" class="headerlink" title="frame"></a>frame</h3><ol>
+<li>N-COUNT The <strong>frame</strong> of a picture or mirror is the wood, metal, or plastic that is fitted around it, especially when it is displayed or hung on a wall.<ul>
+<li>Estelle kept a photograph of her mother in a silver frame on the kitchen mantelpiece.</li>
+</ul>
+</li>
+<li>N-COUNT The <strong>frame</strong> of an object such as a building, chair, or window is the arrangement of wooden, metal, or plastic bars between which other material is fitted, and which give the object its strength and shape. </li>
+<li>N-COUNT The <strong>frames</strong> of a pair of glasses are all the metal or plastic parts of it, but not the lenses. <ul>
+<li>He was wearing new glasses with gold wire frames.</li>
+</ul>
+</li>
+<li>N-COUNT A <strong>frame</strong> of movie film is one of the many separate photographs that it consists of.<ul>
+<li>Standard 8mm projects at 16 frames per second.</li>
+</ul>
+</li>
+<li>V-T When a picture or photograph <strong>is framed</strong>, it is put in a frame.<ul>
+<li>The picture is now ready to be mounted and framed.</li>
+</ul>
+</li>
+</ol>
+<h3 id="framework"><a href="#framework" class="headerlink" title="framework"></a>framework</h3><ol>
+<li>N-COUNT A <strong>framework</strong> is a particular set of rules, ideas, or beliefs which you use in order to deal with problems or to decide what to do.<ul>
+<li>…within the framework of federal regulations.</li>
+</ul>
+</li>
+<li>more abstract compared with the word frame. <ul>
+<li>the framework of the project</li>
+</ul>
+</li>
+</ol>
+<p>【All the annotation of words is from Collins dictionary.】</p>
+]]></content>
+      <categories>
+        <category>English</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>学习笔记#1-数组去重</title>
+    <url>/StudyNotes-1-UniqueArray/</url>
+    <content><![CDATA[<p><strong>题目要求</strong></p>
+<p>&emsp;&emsp;一个数组，除去数组中重复的元素，并输出去重后的数组。</p>
+<p><strong>算法思路</strong></p>
+<p>&emsp;&emsp;遍历需要数组，用旧数组里的元素去查找新数组里的元素，如果该元素在新数组当中，则不添加到新数组当中，反之则添加到新数组中。</p>
+<p>&emsp;&emsp;这个题目需要实现三个关键步骤：一是遍历旧数组，二是根据我们获得的旧数组元素查找新数组中是否已经有相同的元素，三是将新数组中没有的元素添加到新数组当中。遍历数组很容易实现用for循环即可，那么现在需要实现的就是查找元素是否已经在新数组当中。</p>
+<p>&emsp;&emsp;拿到这个题目我首先想到的是遍历旧数组，用旧数组中的元素匹配新数组的元素，匹配采用的是遍历新数组所有元素的方法，也就是用旧数组的元素对新数组中的元素一一匹配，需要两个for循环。添加元素到数组的方法有很多，这里使用内置函数<code>arrName.push()</code>来实现，方便快捷。</p>
+<p><strong>代码实现</strong></p>
+<p>&emsp;&emsp;以下为实现代码：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">30</span>, <span class="number">10</span>, <span class="number">2</span>];</span><br><span class="line"><span class="keyword">var</span> newArr = [];</span><br><span class="line">newArr[<span class="number">0</span>] = arr[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; newArr.length; j++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (newArr[j] == arr[i]) &#123;</span><br><span class="line">            <span class="keyword">break</span>; <span class="comment">// 新数组里已经有该元素</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            newArr.push(arr[i]);</span><br><span class="line">            <span class="keyword">break</span>; <span class="comment">// 这里需要break，否则会继续遍历</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(arr);</span><br><span class="line"><span class="built_in">console</span>.log(newArr);</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;想想还可不可以简化下呢？比如怎么一下子判断新数组里有没有需要查找的元素。而正好，新数组中的元素是不会重复的，那么第二个关键步骤中使用数组的内置函数<code>arrName.indexOf()</code>来判断新数组内是否有需要判断的旧数组中的元素就显得更简单了，根据该内置函数的返回值来判断，若为-1，则新数组中没有该旧数组中的那一个元素，并将该元素添加到新数组当中。</p>
+<p>&emsp;&emsp;以下为关键代码：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">60</span>, <span class="number">10</span>, <span class="number">1</span>];</span><br><span class="line"><span class="keyword">var</span> newArr = []; <span class="comment">// 空数组，用于保存“独一无二”的元素</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">    <span class="comment">// 使用数组内置函数indexOf()，根据返回结果判断新数组中是否已有该元素</span></span><br><span class="line">    <span class="keyword">if</span> (newArr.indexOf(arr[i]) == <span class="number">-1</span>) &#123;</span><br><span class="line">        newArr.push(arr[i]); <span class="comment">// 使用数组内置函数push()将元素添加到新数组元素的末尾，不需要担心顺序问题</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 打印输出</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'原数组为'</span> + arr);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'去重后数组为'</span> + newArr);</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;最初的代码是在学习过程中第一时间想到的，学习了更多用的东西更多之前的代码可能就会显得有点憨憨的，也挺可爱的。</p>
+]]></content>
+      <categories>
+        <category>Study Notes</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蛇形矩阵-对角线型</title>
+    <url>/SnakelikeMatrix/</url>
+    <content><![CDATA[<p><strong>题目要求</strong></p>
+<p>&emsp;&emsp;将自然数1、2、3、···、N*N逐个顺序插入方阵中适当的位置，这个过程中沿斜线进行，构成蛇形排列阵。如N=4时的蛇形排列阵为：</p>
+<p><img src= "/img/loading.gif" data-src="/SnakelikeMatrix/image-20200706204152026.png" alt="image-20200706204152026"></p>
+<p>请编写C语言程序按以上规则输出N=5时的蛇形排列阵。</p>
+<p><strong>算法思路：</strong></p>
+<p>&emsp;&emsp;观察上述矩阵的数值增长线路，如下图所示：</p>
+<p><img src= "/img/loading.gif" data-src="/SnakelikeMatrix/image-20200706212217241.png" alt="image-20200706212217241"></p>
+<ul>
+<li>初始状态：行 i = 0，j = 0 时，数值为1；</li>
+<li>当移动到下一个位置时，需要把当前设定的k值变成下一步要移动的方向状态；</li>
+<li>k = 1时，下一步的移动方向可能是 <ul>
+<li>位于矩阵的第一行：k = 2；</li>
+<li>位于矩阵的最后一行：k = 4；</li>
+</ul>
+</li>
+<li>k = 2时，下一步的移动方向可能是 <ul>
+<li>位于矩阵的最后一行：k = 1；</li>
+<li>位于矩阵其他位置：k = 2；</li>
+<li>位于矩阵的第一列：k = 3；</li>
+</ul>
+</li>
+<li>k = 3时，下一步的移动方向可能是 <ul>
+<li>位于矩阵的最后一列：k = 2；</li>
+<li>位于矩阵的第一列：k = 4；</li>
+</ul>
+</li>
+<li>k = 4时，下一步的移动方向可能是 <ul>
+<li>位于矩阵的第一行：k = 1；</li>
+<li>位于矩阵的最后一列：k = 3；</li>
+<li>位于矩阵其它位置：k = 4；</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>代码实现：</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">0</span>;  <span class="comment">//row</span></span><br><span class="line">	<span class="keyword">int</span> j = <span class="number">0</span>;  <span class="comment">//column</span></span><br><span class="line">	<span class="keyword">int</span> k = <span class="number">3</span>;  <span class="comment">//down</span></span><br><span class="line">	<span class="comment">//k=1: to right; </span></span><br><span class="line">    <span class="comment">//k=2: to bottom left corner; </span></span><br><span class="line">	<span class="comment">//k=3: down; </span></span><br><span class="line">    <span class="comment">//k=4: to top right corner</span></span><br><span class="line">	<span class="keyword">int</span> arr[<span class="number">10</span>][<span class="number">10</span>];	<span class="comment">//max size</span></span><br><span class="line">	arr[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//input</span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"Input n: "</span>);</span><br><span class="line">	scanf_s(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span> (i != n - <span class="number">1</span> || j != n - <span class="number">1</span>) &#123;</span><br><span class="line">		<span class="keyword">if</span> (k == <span class="number">1</span>) &#123;</span><br><span class="line">			arr[i][j + <span class="number">1</span>] = arr[i][j] + <span class="number">1</span>;</span><br><span class="line">			j = j + <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">if</span> (i == n - <span class="number">1</span>) &#123;</span><br><span class="line">				k = <span class="number">4</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				k = <span class="number">2</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (k == <span class="number">2</span>) &#123;</span><br><span class="line">			arr[i + <span class="number">1</span>][j - <span class="number">1</span>] = arr[i][j] + <span class="number">1</span>;</span><br><span class="line">			j = j - <span class="number">1</span>;</span><br><span class="line">			i = i + <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">if</span> (j == <span class="number">0</span> &amp;&amp; i != n - <span class="number">1</span>) &#123;</span><br><span class="line">				k = <span class="number">3</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (i == n - <span class="number">1</span>) &#123;</span><br><span class="line">				k = <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				k = <span class="number">2</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (k == <span class="number">3</span>) &#123;</span><br><span class="line">			arr[i + <span class="number">1</span>][j] = arr[i][j] + <span class="number">1</span>;</span><br><span class="line">			i = i + <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">if</span> (j == n - <span class="number">1</span>) &#123;</span><br><span class="line">				k = <span class="number">2</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				k = <span class="number">4</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (k == <span class="number">4</span>) &#123;</span><br><span class="line">			arr[i - <span class="number">1</span>][j + <span class="number">1</span>] = arr[i][j] + <span class="number">1</span>;</span><br><span class="line">			j = j + <span class="number">1</span>;</span><br><span class="line">			i = i - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">			<span class="keyword">if</span> (i == <span class="number">0</span> &amp;&amp; j != n - <span class="number">1</span>) &#123;</span><br><span class="line">				k = <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span> (j == n - <span class="number">1</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				k = <span class="number">3</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				k = <span class="number">4</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//print</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> a = <span class="number">0</span>; a &lt; n; a++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> b = <span class="number">0</span>; b &lt; n; b++) &#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d\t"</span>, arr[a][b]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;实现对角线型蛇形矩阵的算法不止这一种，可以多多了解。</p>
+<p>小小注意点：</p>
+<ul>
+<li>二维数组的第一个参数是行，第二个参数是列；</li>
+<li>因为使用的是 VS 编写代码，所以代码中使用的是 <code>scanf_s</code>函数；（参考：[scanf()和scanf_s()的区别][1]）</li>
+<li>在代码执行时循环体中 k = 2 的第一行代码会报以下的错，目前还没有找到解决方法：<img src= "/img/loading.gif" data-src="/SnakelikeMatrix/image-20200706214700749.png" alt="image-20200706214700749"></li>
+</ul>
+]]></content>
+      <categories>
+        <category>C语言</category>
+      </categories>
+      <tags>
+        <tag>C</tag>
+        <tag>Algorithm</tag>
       </tags>
   </entry>
 </search>
