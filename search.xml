@@ -97,45 +97,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Similar Words of Coding in English</title>
-    <url>/English-SimilarWordsOfCoding/</url>
-    <content><![CDATA[<p>【All the annotation of words is from Collins dictionary.】</p>
-<h2 id="frame-amp-framework"><a href="#frame-amp-framework" class="headerlink" title="frame &amp; framework"></a>frame &amp; framework</h2><h3 id="frame"><a href="#frame" class="headerlink" title="frame"></a>frame</h3><ol>
-<li>N-COUNT The <strong>frame</strong> of a picture or mirror is the wood, metal, or plastic that is fitted around it, especially when it is displayed or hung on a wall.<ul>
-<li>Estelle kept a photograph of her mother in a silver frame on the kitchen mantelpiece.</li>
-</ul>
-</li>
-<li>N-COUNT The <strong>frame</strong> of an object such as a building, chair, or window is the arrangement of wooden, metal, or plastic bars between which other material is fitted, and which give the object its strength and shape. </li>
-<li>N-COUNT The <strong>frames</strong> of a pair of glasses are all the metal or plastic parts of it, but not the lenses. <ul>
-<li>He was wearing new glasses with gold wire frames.</li>
-</ul>
-</li>
-<li>N-COUNT A <strong>frame</strong> of movie film is one of the many separate photographs that it consists of.<ul>
-<li>Standard 8mm projects at 16 frames per second.</li>
-</ul>
-</li>
-<li>V-T When a picture or photograph <strong>is framed</strong>, it is put in a frame.<ul>
-<li>The picture is now ready to be mounted and framed.</li>
-</ul>
-</li>
-</ol>
-<h3 id="framework"><a href="#framework" class="headerlink" title="framework"></a>framework</h3><ol>
-<li>N-COUNT A <strong>framework</strong> is a particular set of rules, ideas, or beliefs which you use in order to deal with problems or to decide what to do.<ul>
-<li>…within the framework of federal regulations.</li>
-</ul>
-</li>
-<li>more abstract compared with the word frame. <ul>
-<li>the framework of the project</li>
-</ul>
-</li>
-</ol>
-<p>【All the annotation of words is from Collins dictionary.】</p>
-]]></content>
-      <categories>
-        <category>English</category>
-      </categories>
-  </entry>
-  <entry>
     <title>学习笔记#1-数组去重</title>
     <url>/StudyNotes-1-UniqueArray/</url>
     <content><![CDATA[<p><strong>题目要求</strong></p>
@@ -215,6 +176,92 @@
       <tags>
         <tag>C</tag>
         <tag>Algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>English-Labels</title>
+    <url>/English-Labels/</url>
+    <content><![CDATA[<h2 id="lt-ol-gt-ordered-list"><a href="#lt-ol-gt-ordered-list" class="headerlink" title="&lt;ol&gt; ordered list"></a>&lt;ol&gt; ordered list</h2><h2 id="lt-ul-gt-unordered-list"><a href="#lt-ul-gt-unordered-list" class="headerlink" title="&lt;ul&gt; unordered list"></a>&lt;ul&gt; unordered list</h2>]]></content>
+      <categories>
+        <category>English</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Similar Words of Coding in English</title>
+    <url>/English-SimilarWordsOfCoding#1/</url>
+    <content><![CDATA[<p>【All the annotation of words is from Collins dictionary.】</p>
+<h2 id="frame-amp-framework"><a href="#frame-amp-framework" class="headerlink" title="frame &amp; framework"></a>frame &amp; framework</h2><h3 id="frame"><a href="#frame" class="headerlink" title="frame"></a>frame</h3><ol>
+<li>N-COUNT The <strong>frame</strong> of a picture or mirror is the wood, metal, or plastic that is fitted around it, especially when it is displayed or hung on a wall.<ul>
+<li>Estelle kept a photograph of her mother in a silver frame on the kitchen mantelpiece.</li>
+</ul>
+</li>
+<li>N-COUNT The <strong>frame</strong> of an object such as a building, chair, or window is the arrangement of wooden, metal, or plastic bars between which other material is fitted, and which give the object its strength and shape. </li>
+<li>N-COUNT The <strong>frames</strong> of a pair of glasses are all the metal or plastic parts of it, but not the lenses. <ul>
+<li>He was wearing new glasses with gold wire frames.</li>
+</ul>
+</li>
+<li>N-COUNT A <strong>frame</strong> of movie film is one of the many separate photographs that it consists of.<ul>
+<li>Standard 8mm projects at 16 frames per second.</li>
+</ul>
+</li>
+<li>V-T When a picture or photograph <strong>is framed</strong>, it is put in a frame.<ul>
+<li>The picture is now ready to be mounted and framed.</li>
+</ul>
+</li>
+</ol>
+<h3 id="framework"><a href="#framework" class="headerlink" title="framework"></a>framework</h3><ol>
+<li>N-COUNT A <strong>framework</strong> is a particular set of rules, ideas, or beliefs which you use in order to deal with problems or to decide what to do.<ul>
+<li>…within the framework of federal regulations.</li>
+</ul>
+</li>
+<li>more abstract compared with the word frame. <ul>
+<li>the framework of the project</li>
+</ul>
+</li>
+</ol>
+<p>【All the annotation of words is from Collins dictionary.】</p>
+]]></content>
+      <categories>
+        <category>English</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hexo YAMLException:can not read a block mapping entry; a multiline key may not be an implicit key at</title>
+    <url>/Error-hexo-YAMLException/</url>
+    <content><![CDATA[<blockquote>
+<p>今天在整理学习笔记的时候出现了小插曲，使用命令hexo g的时候总是报错，于是我就开始了“漫漫”找错之旅…</p>
+</blockquote>
+<p>&emsp;&emsp;出错的是我的学习笔记#2，报错内容如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">ERROR Process failed: _posts/StudyNotes-2-PositionOfLabelsrcipt.md</span><br><span class="line">YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 10, column 8:</span><br><span class="line"><span class="code">    top_img:</span></span><br><span class="line"><span class="code">           ^</span></span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;从报错信息来看，就是我的第十行第八列出了问题，是设置文章顶部图片的那一行。我在网上搜了下解决方法，基本上都是说是后面没有空格才导致的问题，所以我去检查了下那一行的空格，发现并没有问题，在<code>top_img:</code>后面有一个空格，紧接着的就是图片链接。没有问题啊，怎么会这样？</p>
+<p>&emsp;&emsp;我又看了一些解决方法，发现可能是符号出了问题，有一位博主出现同类问题的时候，发现是报错行数的上面那一行，也就是标题的错误，并且是因为标题中含有<code>[]</code>的问题，改成<code>&lt;&gt;</code>就没问题了。然而…我的标题里是<code>&lt;&gt;</code>，应该是没问题的，但当时脑子不好使，在试了空格无效之后有种想死马当活马医的感觉，觉得可能是<code>&lt;&gt;</code>的问题（我好傻），把<code>&lt;&gt;</code>去掉了，果然不出所料！没用！那个刺眼的ERROR还是在我的屏幕上第n次闪亮登场了…</p>
+<p>&emsp;&emsp;看了这么多解决同类问题的博客，我意识到问题可能还是出在空格，我又去检查了下我的格式，一个一个地检查，终于…好像发现哪里不对劲了——</p>
+<p><img src= "/img/loading.gif" data-src="/Error-hexo-YAMLException/errorLine.jpg" alt="errorLine"></p>
+<p>&emsp;&emsp;这是我文档当中看到的格式，我使用markdown编辑器的时候习惯把窗口缩小编写，问题就是因为这个才难以发现的！我在编辑器里看到的格式没问题，冒号后面也有空格，但是当我回退的时候发现——链接是单独一行的！hexo博客文章的格式很固定，冒号后面一个空格然后跟上内容，如果要提行的话必须使用<code>-</code>短横线，而这个格式看上去是第一种，但其实两种都不是！说是第一种但链接单独提行了，说是第二种但有没有短横线，哪种都不属于就很尴尬呗~所以我把链接放到了冒号后面，再在之间添加了一个空格就解决了。</p>
+<p>&emsp;&emsp;发现解决方法的时候我就意识到了我哪里出了问题，链接我是直接从另一个文章里copy过来的，完全没有注意格式，而且编辑器窗口缩小了，所以我以为我看到的效果是因为长度容纳不下自动提行，但这次正是因为靠经验才找了这么久QAQ，吃一堑长一智！</p>
+]]></content>
+      <categories>
+        <category>Error Road</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习笔记#2-&lt;script&gt;标签应该放在哪里？</title>
+    <url>/StudyNotes-2-PositionOfLabelsrcipt/</url>
+    <content><![CDATA[<p>参考文章：</p>
+<p>[1] <a href="https://blog.csdn.net/ybdesire/article/details/49284699" target="_blank" rel="noopener">https://blog.csdn.net/ybdesire/article/details/49284699</a></p>
+<p>[2] <a href="https://blog.csdn.net/Richard1997/article/details/87350174?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param" target="_blank" rel="noopener">https://blog.csdn.net/Richard1997/article/details/87350174?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param</a></p>
+]]></content>
+      <categories>
+        <category>Study Notes</category>
+      </categories>
+      <tags>
+        <tag>JS</tag>
+        <tag>HTML</tag>
       </tags>
   </entry>
 </search>
