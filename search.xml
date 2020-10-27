@@ -186,45 +186,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Similar Words of Coding in English</title>
-    <url>/English-SimilarWordsOfCoding#1/</url>
-    <content><![CDATA[<p>【All the annotation of words is from Collins dictionary.】</p>
-<h2 id="frame-amp-framework"><a href="#frame-amp-framework" class="headerlink" title="frame &amp; framework"></a>frame &amp; framework</h2><h3 id="frame"><a href="#frame" class="headerlink" title="frame"></a>frame</h3><ol>
-<li>N-COUNT The <strong>frame</strong> of a picture or mirror is the wood, metal, or plastic that is fitted around it, especially when it is displayed or hung on a wall.<ul>
-<li>Estelle kept a photograph of her mother in a silver frame on the kitchen mantelpiece.</li>
-</ul>
-</li>
-<li>N-COUNT The <strong>frame</strong> of an object such as a building, chair, or window is the arrangement of wooden, metal, or plastic bars between which other material is fitted, and which give the object its strength and shape. </li>
-<li>N-COUNT The <strong>frames</strong> of a pair of glasses are all the metal or plastic parts of it, but not the lenses. <ul>
-<li>He was wearing new glasses with gold wire frames.</li>
-</ul>
-</li>
-<li>N-COUNT A <strong>frame</strong> of movie film is one of the many separate photographs that it consists of.<ul>
-<li>Standard 8mm projects at 16 frames per second.</li>
-</ul>
-</li>
-<li>V-T When a picture or photograph <strong>is framed</strong>, it is put in a frame.<ul>
-<li>The picture is now ready to be mounted and framed.</li>
-</ul>
-</li>
-</ol>
-<h3 id="framework"><a href="#framework" class="headerlink" title="framework"></a>framework</h3><ol>
-<li>N-COUNT A <strong>framework</strong> is a particular set of rules, ideas, or beliefs which you use in order to deal with problems or to decide what to do.<ul>
-<li>…within the framework of federal regulations.</li>
-</ul>
-</li>
-<li>more abstract compared with the word frame. <ul>
-<li>the framework of the project</li>
-</ul>
-</li>
-</ol>
-<p>【All the annotation of words is from Collins dictionary.】</p>
-]]></content>
-      <categories>
-        <category>English</category>
-      </categories>
-  </entry>
-  <entry>
     <title>hexo YAMLException:can not read a block mapping entry; a multiline key may not be an implicit key at</title>
     <url>/Error-hexo-YAMLException/</url>
     <content><![CDATA[<blockquote>
@@ -286,5 +247,70 @@
         <tag>JS</tag>
         <tag>HTML</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Windows小知识点-cmd的快捷打开方式以及批量修改图片格式方法</title>
+    <url>/Windows-cmd-lock-screen/</url>
+    <content><![CDATA[<blockquote>
+<p>今天windows聚焦锁屏很好看，想保存下来，但图片位置忘了（也记不住），问了度娘之后顺带学了些小技巧，在这里记录下来</p>
+</blockquote>
+<h2 id="windows聚焦锁屏壁纸文件保存路径"><a href="#windows聚焦锁屏壁纸文件保存路径" class="headerlink" title="windows聚焦锁屏壁纸文件保存路径"></a>windows聚焦锁屏壁纸文件保存路径</h2><p>&emsp;&emsp;文件的保存路径是这样的：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">C:\Users\你的用户名\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;如果还想更方便一点，就直接复制粘贴下面的地址到文件管理器就行啦：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">%localappdata%\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;其实也就省略了上面路径修改用户名的工作量，不过复制粘贴总要来的快点嘛。</p>
+<h2 id="cmd在文件夹中的简单打开方式"><a href="#cmd在文件夹中的简单打开方式" class="headerlink" title="cmd在文件夹中的简单打开方式"></a>cmd在文件夹中的简单打开方式</h2><p>&emsp;&emsp;我看了很多打开cmd的教程，不外乎都是win+R，然后输入cmd打开，方法没问题但万一文件夹的位置比较“靠下”呢？用命令定位到文件夹还是要花费很长的时间，不太方便。</p>
+<p>&emsp;&emsp;但是简单的打开方式还是有的！<font color="red"><strong>打开文件夹所在位置，删掉文件夹上方路径框内的内容，输入cmd，敲回车</strong></font>，搞定！就是这么简单！</p>
+<h2 id="cmd命令批量修改图片格式"><a href="#cmd命令批量修改图片格式" class="headerlink" title="cmd命令批量修改图片格式"></a>cmd命令批量修改图片格式</h2><p>&emsp;&emsp;举个例子就会了：</p>
+<p>&emsp;&emsp;<code>ren *.png *.jpg</code>：ren是命令名称，*是通配符，表示所有同一种类型的文件格式。该命令的意思就是将该文件夹中所有的png格式图片转化为JPG格式的图片。注意ren后有空格，.png后面有空格。</p>
+<p>&emsp;&emsp;那么<code>ren *. *.jpg</code>就是把没有确切文件类型的图片转换成JPG格式的图片，在保存windows聚焦锁屏的时候用得上。</p>
+]]></content>
+      <categories>
+        <category>About Computer</category>
+      </categories>
+      <tags>
+        <tag>Computer Tips</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Similar Words of Coding in English</title>
+    <url>/English-SimilarWordsOfCoding-1/</url>
+    <content><![CDATA[<p>【All the annotation of words is from Collins dictionary.】</p>
+<h2 id="frame-amp-framework"><a href="#frame-amp-framework" class="headerlink" title="frame &amp; framework"></a>frame &amp; framework</h2><h3 id="frame"><a href="#frame" class="headerlink" title="frame"></a>frame</h3><ol>
+<li>N-COUNT The <strong>frame</strong> of a picture or mirror is the wood, metal, or plastic that is fitted around it, especially when it is displayed or hung on a wall.<ul>
+<li>Estelle kept a photograph of her mother in a silver frame on the kitchen mantelpiece.</li>
+</ul>
+</li>
+<li>N-COUNT The <strong>frame</strong> of an object such as a building, chair, or window is the arrangement of wooden, metal, or plastic bars between which other material is fitted, and which give the object its strength and shape. </li>
+<li>N-COUNT The <strong>frames</strong> of a pair of glasses are all the metal or plastic parts of it, but not the lenses. <ul>
+<li>He was wearing new glasses with gold wire frames.</li>
+</ul>
+</li>
+<li>N-COUNT A <strong>frame</strong> of movie film is one of the many separate photographs that it consists of.<ul>
+<li>Standard 8mm projects at 16 frames per second.</li>
+</ul>
+</li>
+<li>V-T When a picture or photograph <strong>is framed</strong>, it is put in a frame.<ul>
+<li>The picture is now ready to be mounted and framed.</li>
+</ul>
+</li>
+</ol>
+<h3 id="framework"><a href="#framework" class="headerlink" title="framework"></a>framework</h3><ol>
+<li>N-COUNT A <strong>framework</strong> is a particular set of rules, ideas, or beliefs which you use in order to deal with problems or to decide what to do.<ul>
+<li>…within the framework of federal regulations.</li>
+</ul>
+</li>
+<li>more abstract compared with the word frame. <ul>
+<li>the framework of the project</li>
+</ul>
+</li>
+</ol>
+<p>【All the annotation of words is from Collins dictionary.】</p>
+]]></content>
+      <categories>
+        <category>English</category>
+      </categories>
   </entry>
 </search>
