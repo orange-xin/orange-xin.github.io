@@ -313,4 +313,22 @@
         <category>English</category>
       </categories>
   </entry>
+  <entry>
+    <title>git常用命令</title>
+    <url>/git-commands/</url>
+    <content><![CDATA[<h1 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a>上传文件</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git commit -m "info"</span><br><span class="line"></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="git版本相关"><a href="#git版本相关" class="headerlink" title="git版本相关"></a>git版本相关</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">git --version</span><br><span class="line"></span><br><span class="line">git update-git-for-windows</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>About Computer</category>
+        <category>Study Notes</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
 </search>
