@@ -180,10 +180,13 @@
   <entry>
     <title>English-Labels</title>
     <url>/English-Labels/</url>
-    <content><![CDATA[<h2 id="lt-ol-gt-ordered-list"><a href="#lt-ol-gt-ordered-list" class="headerlink" title="&lt;ol&gt; ordered list"></a>&lt;ol&gt; ordered list</h2><h2 id="lt-ul-gt-unordered-list"><a href="#lt-ul-gt-unordered-list" class="headerlink" title="&lt;ul&gt; unordered list"></a>&lt;ul&gt; unordered list</h2>]]></content>
+    <content><![CDATA[<h1 id="lt-ol-gt-ordered-list"><a href="#lt-ol-gt-ordered-list" class="headerlink" title="&lt;ol&gt; ordered list"></a>&lt;ol&gt; ordered list</h1><h1 id="lt-ul-gt-unordered-list"><a href="#lt-ul-gt-unordered-list" class="headerlink" title="&lt;ul&gt; unordered list"></a>&lt;ul&gt; unordered list</h1>]]></content>
       <categories>
         <category>English</category>
       </categories>
+      <tags>
+        <tag>English</tag>
+      </tags>
   </entry>
   <entry>
     <title>hexo YAMLException:can not read a block mapping entry; a multiline key may not be an implicit key at</title>
@@ -278,7 +281,7 @@
     <title>Similar Words of Coding in English</title>
     <url>/English-SimilarWordsOfCoding-1/</url>
     <content><![CDATA[<p>【All the annotation of words is from Collins dictionary.】</p>
-<h2 id="frame-amp-framework"><a href="#frame-amp-framework" class="headerlink" title="frame &amp; framework"></a>frame &amp; framework</h2><h3 id="frame"><a href="#frame" class="headerlink" title="frame"></a>frame</h3><ol>
+<h1 id="frame-amp-framework"><a href="#frame-amp-framework" class="headerlink" title="frame &amp; framework"></a>frame &amp; framework</h1><h2 id="frame"><a href="#frame" class="headerlink" title="frame"></a>frame</h2><ol>
 <li>N-COUNT The <strong>frame</strong> of a picture or mirror is the wood, metal, or plastic that is fitted around it, especially when it is displayed or hung on a wall.<ul>
 <li>Estelle kept a photograph of her mother in a silver frame on the kitchen mantelpiece.</li>
 </ul>
@@ -297,7 +300,7 @@
 </ul>
 </li>
 </ol>
-<h3 id="framework"><a href="#framework" class="headerlink" title="framework"></a>framework</h3><ol>
+<h2 id="framework"><a href="#framework" class="headerlink" title="framework"></a>framework</h2><ol>
 <li>N-COUNT A <strong>framework</strong> is a particular set of rules, ideas, or beliefs which you use in order to deal with problems or to decide what to do.<ul>
 <li>…within the framework of federal regulations.</li>
 </ul>
@@ -312,6 +315,9 @@
       <categories>
         <category>English</category>
       </categories>
+      <tags>
+        <tag>English</tag>
+      </tags>
   </entry>
   <entry>
     <title>git常用命令</title>
@@ -329,6 +335,164 @@
       </categories>
       <tags>
         <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>English learning from Glory Of The King</title>
+    <url>/English-Glory-of-the-King/</url>
+    <content><![CDATA[<blockquote>
+<p>I used to play Glory Of The King with friends and I find out there always are some words or sentences I do not really understand. So I searched on the web and listed them below. There are always new things to me to learn. Keep learning!</p>
+</blockquote>
+<h1 id="All-Sentences"><a href="#All-Sentences" class="headerlink" title="All Sentences"></a>All Sentences</h1><p>First Blood </p>
+<p>Double Kill </p>
+<p>Triple Kill </p>
+<p><strong>Quadra</strong> Kill </p>
+<p><strong>Penta</strong> Kill </p>
+<p>Ace / Aced</p>
+<p>Killing <strong>Spree</strong> </p>
+<p><strong>Rampage</strong>  </p>
+<p>Unstoppable </p>
+<p><strong>Godlike</strong> </p>
+<p><strong>Legendary</strong> </p>
+<p>An enemy has been <strong>slain</strong>.  </p>
+<p>An <strong>ally</strong> has been slain. </p>
+<p>You have slain an enemy. </p>
+<p>You have been slain. </p>
+<p>Shut down!</p>
+<p><strong>Executed</strong>. </p>
+<p>Your <strong>turret</strong> has been destroyed. </p>
+<p>Your team has destroyed the turret.</p>
+<p>Defeat. </p>
+<p>Victory. </p>
+<h1 id="quadra"><a href="#quadra" class="headerlink" title="quadra"></a>quadra</h1><h2 id="prefix-ˈpriːfɪks"><a href="#prefix-ˈpriːfɪks" class="headerlink" title="prefix /ˈpriːfɪks/"></a>prefix <em>/ˈpriːfɪks/</em></h2><ol>
+<li><p><strong>N</strong>-COUNT A <strong>prefix</strong> is a letter or group of letters, for example, “un-“ or “multi-,” that is added to the beginning of a word in order to form a different word. For example, the prefix “un-“ is added to “happy” to form “unhappy.” Compare and.</p>
+</li>
+<li><p>N-COUNT A <strong>prefix</strong> is one or more numbers or letters added to the beginning of a code number to indicate, for example, what area something belongs to. </p>
+<ul>
+<li>To telephone from the U.S. use the prefix 011 33 before the numbers given here.</li>
+</ul>
+</li>
+</ol>
+<h2 id="quadri-ˈkwɒdrɪ"><a href="#quadri-ˈkwɒdrɪ" class="headerlink" title="quadri-[ˈkwɒdrɪ]"></a>quadri-[ˈkwɒdrɪ]</h2><p>pref. four</p>
+<h2 id="quadrangle-ˈkwɒdˌraeŋɡəl"><a href="#quadrangle-ˈkwɒdˌraeŋɡəl" class="headerlink" title="quadrangle /ˈkwɒdˌræŋɡəl/"></a>quadrangle <em>/ˈkwɒdˌræŋɡəl/</em></h2><ul>
+<li>N-COUNT A <strong>quadrangle</strong> is an open square area with buildings around it, especially in a college or school.</li>
+</ul>
+<h1 id="penta-ˈpentə"><a href="#penta-ˈpentə" class="headerlink" title="penta-[ˈpentə]"></a>penta-[ˈpentə]</h1><p>pref. five</p>
+<h1 id="spree-spriː"><a href="#spree-spriː" class="headerlink" title="spree /spriː/"></a>spree <em>/spriː/</em></h1><ul>
+<li>N-COUNT If you spend a period of time doing something in an excessive way, you can say that you are going <strong>on</strong> a particular kind of <strong>spree</strong>. <ul>
+<li>Some people went on a spending spree in December to beat the new tax.</li>
+</ul>
+</li>
+</ul>
+<h1 id="rampage"><a href="#rampage" class="headerlink" title="rampage"></a>rampage</h1><p><strong>ræmˈpeɪdʒ</strong>，<strong>ˈræmpeɪdʒ</strong>。</p>
+<ol>
+<li>V-I When people or animals <strong>rampage</strong> through a place, they rush around there in a wild or violent way, causing damage or destruction. <ul>
+<li>Hundreds of youths rampaged through the town, smashing shop windows and overturning cars.</li>
+</ul>
+</li>
+<li>PHRASE If people go <strong>on a rampage</strong>, they rush around in a wild or violent way, causing damage or destruction. <ul>
+<li>The prisoners went on a rampage destroying everything in their way.</li>
+</ul>
+</li>
+</ol>
+<h1 id="godlike"><a href="#godlike" class="headerlink" title="godlike"></a>godlike</h1><ul>
+<li><p>A <strong>godlike</strong> person or a person with <strong>godlike</strong> qualities is admired or respected very much as if he or she were perfect. </p>
+<ul>
+<li><p>His energy and talent elevate him to godlike status.</p>
+</li>
+<li><p>They were godlike in their wisdom and compassion.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="legendary-ˈledʒəndərɪ"><a href="#legendary-ˈledʒəndərɪ" class="headerlink" title="legendary /ˈlɛdʒəndərɪ/"></a>legendary <em>/ˈlɛdʒəndərɪ/</em></h1><ol>
+<li><p>ADJ If you describe someone or something as <strong>legendary</strong>, you mean that they are very famous and that many stories are told about them. </p>
+<ul>
+<li>…the legendary Jazz singer Adelaide Hall.</li>
+</ul>
+</li>
+<li><p>ADJ A <strong>legendary</strong> person, place, or event is mentioned or described in an old legend. </p>
+<ul>
+<li>The hill is supposed to be the resting place of the legendary King Lud.</li>
+</ul>
+</li>
+</ol>
+<h1 id="slay-sleɪ"><a href="#slay-sleɪ" class="headerlink" title="slay /sleɪ/"></a>slay <em>/sleɪ/</em></h1><p>slaying, slew (slayed), slain, slays </p>
+<ol>
+<li><p><strong>V-T</strong> to kill sb/sth in a war or a fight.</p>
+</li>
+<li><p>V-T If someone <strong>slays</strong> an animal, they kill it in a violent way. (formal)</p>
+<ul>
+<li>…the hill where St. George slew the dragon.</li>
+</ul>
+</li>
+<li><p>V-T PASSIVE If someone <strong>has been slain</strong>, they have been murdered. </p>
+<ul>
+<li>Two Australian tourists were slain.</li>
+</ul>
+</li>
+</ol>
+<h1 id="ally"><a href="#ally" class="headerlink" title="ally"></a>ally</h1><p>allying, allied, allies </p>
+<p>noun <strong>/ælaɪ/</strong>，verb <strong>/əˈlaɪ/</strong>。</p>
+<ol>
+<li><p>N-COUNT A country’s <strong>ally</strong> is another country that has an agreement to support it, especially in war. </p>
+<ul>
+<li>Washington would not take such a step without its allies’ approval.</li>
+</ul>
+</li>
+<li><p><strong>N</strong>-COUNT If you describe someone as your <strong>ally</strong>, you mean that they help and support you, especially when other people are opposing you. </p>
+<ul>
+<li>He is a close ally of the president.</li>
+</ul>
+</li>
+<li><p>V-T If you <strong>ally</strong> <strong>yourself with</strong> someone or something, you give your support to them. </p>
+<ul>
+<li>He will have no choice but to ally himself with the new movement.</li>
+</ul>
+</li>
+</ol>
+<h1 id="execute-ˈeksɪˌkjuːt"><a href="#execute-ˈeksɪˌkjuːt" class="headerlink" title="execute /ˈɛksɪˌkjuːt/"></a>execute <em>/ˈɛksɪˌkjuːt/</em></h1><p>( executing, executed, executes )</p>
+<ol>
+<li><p>V-T To <strong>execute</strong> someone means to kill them as a punishment for a serious crime. </p>
+<ul>
+<li><p>He said nobody had been executed as a direct result of the events.</p>
+</li>
+<li><p>One group claimed to have executed the hostage.</p>
+</li>
+</ul>
+</li>
+<li><p>execution N-VAR </p>
+<ul>
+<li>Execution by lethal injection is scheduled for July 30th.</li>
+</ul>
+</li>
+<li><p>V-T If you <strong>execute</strong> a plan, you carry it out. (formal)</p>
+<ul>
+<li><p>We are going to execute our campaign plan to the letter.(to the letter: strictly)</p>
+</li>
+<li><p>U.S. forces are fully prepared for the execution of any action once the order is given by the president.</p>
+</li>
+</ul>
+</li>
+<li><p>V-T If you <strong>execute</strong> a difficult action or movement, you successfully perform it. </p>
+<ul>
+<li>The landing was skillfully executed.</li>
+</ul>
+</li>
+</ol>
+<h1 id="turret-ˈtvrɪt"><a href="#turret-ˈtvrɪt" class="headerlink" title="turret /ˈtʌrɪt/"></a>turret <em>/ˈtʌrɪt/</em></h1><ol>
+<li><p>N-COUNT A <strong>turret</strong> is a small narrow tower on top of a building or a larger tower. </p>
+</li>
+<li><p>N-COUNT The <strong>turret</strong> on a tank or warship is the part where the guns are fixed, which can be turned in any direction. </p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>English</category>
+      </categories>
+      <tags>
+        <tag>English</tag>
+        <tag>Game</tag>
       </tags>
   </entry>
 </search>
